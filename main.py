@@ -3,7 +3,7 @@ import subprocess
 import os
 from telebot import types
 
-bot_token = '5919164836:AAGSXqaCmd7hv3CGo2qG5W0beuQose6mxVk'
+bot_token = ''
 bot = telebot.TeleBot(bot_token)
 
 uploaded_files_count = 0
