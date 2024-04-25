@@ -17,7 +17,7 @@ def start_message(message):
     upload_button = types.InlineKeyboardButton(text="رفع ملف 📤", callback_data="upload")
     delete = types.InlineKeyboardButton(text="حذف كل الملفات 🗑", callback_data="delete")
     keyboard.row(upload_button,delete)
-    bot.reply_to(message, f'مرحباً بك في بوت شيعي 🌊 \n\n※ بوت رفع ملفات على استضافة بايثون 📤 \n※ تحكم في البوت من الازرار الموجودة بالاسفل \n\n※ عدد الملفات المرفوعه {uploaded_files_count} 📂', reply_markup=keyboard)
+    bot.reply_to(message,f'مرحباً بك في بوت شيعي 🌊 \n\n※ بوت رفع ملفات على استضافة بايثون 📤 \n※ تحكم في البوت من الازرار الموجودة بالاسفل \n\n※ عدد الملفات المرفوعه {uploaded_files_count} 📂', reply_markup=keyboard)
 
 @bot.message_handler(content_types=['document'])
 def handle_file(message):
